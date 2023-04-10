@@ -1,0 +1,32 @@
+<div>
+  <h1>Inicio de Sesion</h1>
+
+  <div>
+    <form action="/api/v1/session/login" method="post">
+      <label for="email">Correo</label><br />
+      <input
+        type="email"
+        name="mail"
+        id="mail"
+        placeholder="introduzca su correo electronico"
+      />
+      <br/>
+      <label for="password">Contrasena</label>
+      <br />
+      <input
+        type="password"
+        name="contraseña"
+        id="password"
+        placeholder="introduzca su contrasena"
+        required
+      />
+      <br />
+      <button type="submit">submit</button>
+    </form>
+  </div>
+   <div>
+    <br />
+    <a href="/api/v1/session/github"><button type="submit">Entrar con GITHUB</button></a>
+  </div>
+
+</div>

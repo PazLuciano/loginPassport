@@ -1,0 +1,15 @@
+<h1>CHAT GRUPAL</h1>
+<input type="text" id="input">
+<input type="submit" id="btn">
+<div id="container">
+    {{#each messages}}
+        <div>
+            <p>Mensaje de {{this.user}}</p>
+            <p>{{this.message}}</p>
+            <p>Fecha: {{this.date}}</p>
+        </div>
+    {{/each}}
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/chat.js"></script>
